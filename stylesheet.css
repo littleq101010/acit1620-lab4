@@ -1,0 +1,101 @@
+:root {
+    --base-color: 175, 50%;
+    --base-font-color: 175, 100%;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1rem;
+}
+
+
+div > header {
+    background-color: hsl(var(--base-color), 50%);
+    box-sizing: border-box;
+    height: 6rem;
+    color: hsl(var(--base-font-color), 100%);
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+    padding: 1rem;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+
+header div {
+    margin: auto;
+}
+
+li {
+
+    padding: 1rem;
+    box-shadow: 0px 0px 10px grey; 
+    color: hsl(var(--base-font-color), 30%);
+    transition: margin-top 0.3s ease-in-out;
+}
+
+
+ul {
+    display: flex;
+    padding-left: 0;
+   list-style-type: none;
+   align-items: start;
+   gap: 1rem;
+}
+
+li:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 10px grey; 
+    margin-top: -0.5rem;
+    background-color: hsl(var(--base-color), 50%);
+    color: hsl(var(--base-font-color), 100%);
+ 
+}
+
+section  header {
+    color: hsl(var(--base-font-color), 35%);
+    font-size: 2rem;
+    font-weight:200;
+}
+
+section p {
+   color: hsl(var(--base-font-color),10%);
+}
+
+
+section {
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+
+section:hover {
+    background-color: hsl(var(--base-color), 25%);
+    padding: 2rem;
+}
+
+
+section:hover p {
+    color: hsl(var(--base-font-color), 100%);
+}
+
+
+section:hover header {
+    color: hsl(var(--base-font-color), 100%);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    color: hsl(var(--base-font-color), 10%);
+    border-top: 1px solid black;
+    margin-top: 8rem;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
