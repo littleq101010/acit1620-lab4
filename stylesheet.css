@@ -4,18 +4,18 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 1rem;
 }
 
 
 div > header {
-    background-color: hsl(var(--base-color), 50%);
+    background-color: hsl(var(--base-color), 20%);
     box-sizing: border-box;
     height: 6rem;
     color: hsl(var(--base-font-color), 100%);
-    font-size: 30px;
-    font-family:'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 1rem;
     text-align: center;
     margin: auto;
@@ -98,4 +98,53 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+
+
+.container {
+    position:relative;
+    display: flex;
+}
+
+/* .background-text{
+    position: absolute;
+    color: hsl(var(--base-color), 50%);
+    font-size: 3rem;
+    top:0;
+    left:0;
+    z-index: -1;
+} */
+
+.background {
+    height: 100%;
+    width: 80%;
+    top: 0;
+    left:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.background-text {
+    width: min-content;
+    height: min-content ;
+    font-weight: bolder;
+    font-size: 3rem;
+    opacity: 5%;
+}
+
+.title-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.title {
+    margin: auto;
 }
